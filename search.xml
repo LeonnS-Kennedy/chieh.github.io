@@ -322,10 +322,9 @@
     <url>/2023/05/22/%E5%BD%93PDF%E6%9D%A5%E6%95%B2%E9%97%A8/</url>
     <content><![CDATA[<h1 id="我的一个朋友系列"><a href="#我的一个朋友系列" class="headerlink" title="我的一个朋友系列"></a>我的一个朋友系列</h1><p>小时候打游戏肝到一个武器装备(在当时很值钱嗷)，遇到一个人说要跟我聊聊，于是乎，我就在QQ跟人聊天，结果说要发几张图片给我看价格表(PDF格式)，我信了他的邪接收了。结果我上线游戏准备交易，MD鼠标自己动了，直接把东西送给了他，cao，真恶心嗷~</p>
 <p>So，如果打开了陌生人给你发送的某个东西,甚至是个图片,一个pdf 都会让电脑不知不觉成为别人的肉鸡(就是别人想对你的电脑干嘛就干嘛啦~)。</p>
-<p>本文参考文章<a class="link"   href="https://blog.csdn.net/qq_28205153/article/details/119791647" >&gt;点这里&lt; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>1.所需环境</p>
 <ul>
-<li>受害者所处操作系统：Windows XP SP3</li>
+<li>受害者所处操作系统：Windows XP </li>
 <li>虚拟机：VMware workstation</li>
 <li>动态调试：OllyDbg</li>
 <li>静态调试：IDA pro</li>
