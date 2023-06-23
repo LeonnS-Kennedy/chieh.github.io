@@ -903,4 +903,410 @@
 <p>(事实上word这类编辑文档也可以注入病毒，不过更多的是用来激活🙂，例如使用LLDB动态调试可以激活office365套件)。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>博客搭建教程</title>
+    <url>/2023/06/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是一个系列教程内容为：</p>
+<ol>
+<li>学会安装相应需要的依赖软件</li>
+<li>学会更换主题</li>
+<li>学会基本的站点配置</li>
+<li>知道怎么生成文章并编辑</li>
+<li>上传你的博客并拥有一个可以访问的地址</li>
+</ol>
+<h1 id="搭建之前的准备"><a href="#搭建之前的准备" class="headerlink" title="搭建之前的准备"></a>搭建之前的准备</h1><h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>选择适合自己电脑系统windows &#x2F; Linux &#x2F; macOS 的安装包</p>
+<p>本教程以Windows为例安装</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/f8TSn08i.png"
+                     
+                ></p>
+<p>运行安装包，默认安装位置c盘,选择Add to PATH然后点Next继续就行了</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/gtd/Snipaste_2020-02-29_08-49-39.png"
+                     
+                ></p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/0D5uShsi.png"
+                     
+                ></p>
+<p>如果你的下载速度比较慢可以选择下面的国内Git镜像进行下载</p>
+<p>运行安装包，选择合适的安装位置和其余配置，然后点Next；怕出错的一路点击NEXT即可.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/MXfLg0BK.png"
+                     
+                ></p>
+<h2 id="验证Nodejs是否安装配置成功"><a href="#验证Nodejs是否安装配置成功" class="headerlink" title="验证Nodejs是否安装配置成功"></a>验证Nodejs是否安装配置成功</h2><p>我们安装完Git后，在桌面右键会有Git Bash Here，我们直接点开</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://i.loli.net/2020/02/29/s1YhxtEILOlk4Xz.png"
+                     
+                ></p>
+<p>在出来的终端中，我们分别执行下面的命令</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/lnAhRqhE.png"
+                     
+                ></p>
+<p>如果输出了版本号，那么证明配置成功，如果没有版本号，请重新安装nodejs（<strong>检查是否勾选Add to Path</strong>），或者手动为nodejs添加环境变量</p>
+<h2 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h2><p>在git bash里面执行下面的命令</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></div>
+
+<p>检查cnpm是否安装成功</p>
+<p>执行</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cnpm -v </span><br></pre></td></tr></table></figure></div>
+
+<p>如果输出版本号就是安装成功了</p>
+<h1 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h1><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>在git bash执行下面的命令安装hexo</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>选择一个存放博客数据的文件夹，然后右键打开git bash并执行下面的命令</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></div>
+
+<p>自动执行到<code>Install dependencies</code>的时候你可能会卡住，这是大多数人基本都会遇到的</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/kyfoofiO.png"
+                     
+                ></p>
+<p>我们只需要在这里的时候结束命令，按<code>Ctrl + c</code>就可以结束命令</p>
+<p>然后执行下面这个命令，就可以使用国内的镜像为你完成博客的初始化工作</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cnpm install</span><br></pre></td></tr></table></figure></div>
+
+<p>然后继续下面的步骤</p>
+<p>等待命令完成后，就完成了初始化，现在就可以预览我们的博客了</p>
+<p>执行下面这个命令</p>
+<p><em><strong>注意不要结束命令或者关闭终端窗口</strong></em></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p>然后会出来一段http开头的网址，按住<code>Ctrl</code>单击网址在浏览器打开</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/VNRTx5cn.png"
+                     
+                ></p>
+<p><em><strong>(你非要复制到浏览器打开也行,但是不要使用<code>Ctrl+ C</code>复制)</strong></em></p>
+<p>就会出现这么一个页面了</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/yTbUpAJ3.png"
+                     
+                ></p>
+<p>到这里,博客搭建基本完成.</p>
+<h1 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h1><p>如果觉得上面的默认主题不好看,可以更改替换主题</p>
+<p>hexo的所有主题都在下面这个地址：</p>
+<p>你可能会在这个地址看到很多好看的主题，但是我们要慢慢来，有些主题的配置难度还是很高的</p>
+<p>我们要找一个功能齐全，配置简单的主题练练手</p>
+<p>下面是一个新手入门hexo的Next主题</p>
+<blockquote>
+<p>预览效果：<a class="link"   href="https://theme-next.org/" >https://theme-next.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>项目地址：<a class="link"   href="https://github.com/theme-next/hexo-theme-next" >https://github.com/theme-next/hexo-theme-next <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>配置文档：<a class="link"   href="https://theme-next.org/docs/getting-started/" >https://theme-next.org/docs/getting-started/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+<p>如你所见，其实每个主题都会包含这个三个东西</p>
+<ul>
+<li>预览效果: 点击链接可以预览主题部署之后的样子</li>
+<li>项目地址: 顾名思义,就是主题的项目地址</li>
+<li>配置文档: 如何配置使它成为你的个人博客的主题</li>
+</ul>
+<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p>打开主题的项目地址后，点击<code>Clone or download</code></p>
+<p>然后复制https开头的地址</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_09-46-02.gnmyl5b7s2.png"
+                     
+                ></p>
+<p>然后在你的博客文件夹下面打开git bash,执行下面的命令：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone 复制的地址 themes/主题名字</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_09-50-23.o7ukcdqwa8e.png"
+                     
+                ></p>
+<ul>
+<li>git clone ：克隆</li>
+<li>地址：下载地址 </li>
+<li>themes&#x2F;next：是把文件夹下载到主题目录下，并把主题文件命名为next</li>
+</ul>
+<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>如果你觉得比较麻烦，还有第二个办法</p>
+<p>打开主题项目地址，然后点击<code>Clone or download</code>，然后点击Download ZIP</p>
+<p>这样可以下载主题文件压缩包，前提是你已经登入了github（自己注册一下）</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_09-53-14.hd54gibpilh.png"
+                     
+                ></p>
+<p>然后解压压缩包，把文件夹放在博客目录下的themes目录，并把文件夹命名为主题的名字</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_09-56-33.xhx8o5z5d9.png"
+                     
+                ></p>
+<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><p>​                  <del>先去玩局游戏,再吃顿KFC,接下来重复方法一or方法二</del> </p>
+<p>​         <em><strong>没有方法三</strong></em></p>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>在博客的目录下有一个叫<code>_config.yml</code>的文件,打开它</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_10-01-51.gwst228nama.png"
+                     
+                ></p>
+<p>找到<code>themes</code>这一行，然后将主题名字修改为next，主题就成功更换了</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_10-02-23.58o49hkjdki.png"
+                     
+                ></p>
+<h2 id="预览主题"><a href="#预览主题" class="headerlink" title="预览主题"></a>预览主题</h2><p>在博客目录打开git bash,输入以下命令:</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p>还是会出现一段浏览地址，按住<code>Ctrl</code>单击网址在浏览器打开</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://vonsdite.github.io/images/2018-11-17-14-21-41.png"
+                     
+                ></p>
+<p><em><strong>注意：有些主题你更换之后是暂时无法预览的，因为有的主题还需要安装它需要的依赖，这一般都会在主题的文档里面提到，只有安装它的依赖之后才可以正常预览，这里暂时不做说明(懒)</strong></em></p>
+<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>这里做简单的配置介绍</p>
+<p>我们需要认识两个文件</p>
+<ul>
+<li>站点配置文件</li>
+</ul>
+<p>指的是博客根目录下的<code>_config.yml</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_10-01-51.gwst228nama.png"
+                     
+                ></p>
+<ul>
+<li>主题配置文件</li>
+</ul>
+<p>指的是某个主题下的<code>_config.yml</code></p>
+<p>它们的名字都叫<code>_config.yml</code>但是你不能弄混淆</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_10-11-13.qayjeoclrer.png"
+                     
+                ></p>
+<p>在我们看主题文档配置的时候，必须要分清这两个概念的，不然会报错</p>
+<p>先来几个基本的配置</p>
+<h2 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h2><p>在Next主题的文档里面提到了如何更换语言</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/fnzVXJxJ.png"
+                     
+                ></p>
+<p>它要求我们更改的是站点配置文件，并且给出了代码示范</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">language: zh-Hans</span><br></pre></td></tr></table></figure></div>
+
+<p>我们打开站点配置文件</p>
+<p>按照要求，将language的配置改成zh-CN，然后保存文件</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/oMiKXPuS.png"
+                     
+                ></p>
+<h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><p>现在再来尝试一个</p>
+<p>Next主题里面有个Scheme选项，可以更改主题的外观</p>
+<p>根据要求，我们需要更改的是主题配置文件</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/d5jfxFEh.png"
+                     
+                ></p>
+<p>打开主题配置文件，我们尝试scheme改成双栏，也就是需要修改成Pisces</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/ZLozGQWe.png"
+                     
+                ></p>
+<p>现在已经修改过两个配置了，为了检验是否修改成功，我们需要预览一下主题</p>
+<p>在博客根目录下执行</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p>按住<code>Ctrl</code>单击网址在浏览器打开</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/111ADRtE.png"
+                     
+                >如果喜欢其他主题配置主题过程同理,多看主题配置文档即可,一般在主题代码中也会给注释</p>
+<h1 id="文章编辑工具"><a href="#文章编辑工具" class="headerlink" title="文章编辑工具"></a>文章编辑工具</h1><p>在博客根目录右键git bash执行：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;文章名字&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>例如：你想创建一个名为”我的第一个博客“的文章</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/I1AhY2Zv.png"
+                     
+                ></p>
+<p>文章链接建议是<strong>英文</strong>，然后会显示你的文章生成的目录，每次生成的文章都固定在你的博客根目录下面的source&#x2F;_posts下</p>
+<!--其实中文也行,如上图-->
+
+<p>可以看到是一个后缀为.md的文件，这个其实是一个markdown文件，如果你不知道markdown是什么，在进阶篇会告诉你，就算你不会markdown，你可以暂时把这个当成txt文件</p>
+<p>我建议你安装Typora编辑.md文件</p>
+<p>按照目录打开’我的第一个博客.md’文件，可以看到一个方框里面有一段信息</p>
+<p>这里面是存放你博客信息的地方</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/X4MPGMGd.png"
+                     
+                ></p>
+<ul>
+<li>title 文章标题</li>
+<li>date 文章日期</li>
+<li>tag 文章标签</li>
+</ul>
+<p>这时候你可以修改文章标题，并且在方框下面输入你文章的内容</p>
+<p>保存之后，你可以在博客根目录打开git bash,执行下面的命令,然后打开链接</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p><em><strong>预览博客都是这个命令</strong></em></p>
+<h1 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h1><p>现在我们的博客都是只能本地预览，如何将我们的上传到一个地方，然后通过域名访问呢？</p>
+<p>方法一</p>
+<p>需要一个服务器再买个域名绑定</p>
+<p>方法二</p>
+<p><strong>github：</strong></p>
+<ul>
+<li>国外网站，是英文</li>
+<li>访问速度较慢</li>
+<li>不需要实名认证</li>
+<li>域名形式可以自定义</li>
+</ul>
+<p>方法三</p>
+<p><strong>coding：</strong></p>
+<ul>
+<li>国内的平台，网站是中文</li>
+<li>访问速度快</li>
+<li>部署网站需要实名认证，只需要填写身份证号即可</li>
+<li>域名是随机给的，所以很长而且不能自定义</li>
+</ul>
+<p><strong>不喜欢实名认证还想使用自定义域名</strong></p>
+<p>所以接下来使用GitHub部署,使用coding部署步骤大同小异</p>
+<h2 id="使用github部署你的博客"><a href="#使用github部署你的博客" class="headerlink" title="使用github部署你的博客"></a>使用github部署你的博客</h2><p>创建一个仓库</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/AvRDe7d8.png"
+                     
+                ></p>
+<ul>
+<li>仓库名必须是用户名 + .github.io</li>
+<li>勾选初始化README</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/SCaiTOkn.png"
+                     
+                ></p>
+<p>接下来需要我们创建一个git秘钥</p>
+<ul>
+<li>打开git bash（不要求在哪个目录）</li>
+<li>执行： 下面的代码,输入你的邮箱</li>
+<li>不管出现什么信息，你只需要回车就可以了</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C “你的邮箱“</span><br></pre></td></tr></table></figure></div>
+
+<p>然后执行</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></div>
+
+<p>输出你的秘钥，我们复制输出信息</p>
+<p>然后点击头像，点击Settings–SSH·····–New SSH Key</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/XhtBDgJ7.png"
+                     
+                ></p>
+<p>粘贴你复制的秘钥</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/Iko2fZV4.png"
+                     
+                ></p>
+<p>然后打开git bash</p>
+<p>执行：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$  ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
+
+<p>会提示你下面这个，输入yes回车就行了</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no/[fingerprint])? </span><br></pre></td></tr></table></figure></div>
+
+<p>打开项目，点击绿色按钮，点击Use SSH</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/mjCupnLO.png"
+                     
+                ></p>
+<p>复制git开头的地址</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/uPeg7ujz.png"
+                     
+                ></p>
+<p>打开站点配置文件,修改deploy信息</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你复制的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></div>
+
+<p>在博客根目录下打开git bash,分别执行下面的命令：</p>
+<ul>
+<li>yourname是你的名字</li>
+<li>youremail是你的邮箱</li>
+</ul>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;yourname&quot;</span><br><span class="line">$ git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>然后安装上传插件</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h4><p>在博客根目录下打开git bash，执行下面的命令,等待程序执行结束即可</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><p>打开项目，点击Settings</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/WAdS4u8n.png"
+                     
+                ></p>
+<p>左侧找到Github pages,在cusrom domain设置域名点击save保存</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/06/23/Zm5Hr9sq.png"
+                     
+                ></p>
+<p>到此,你的个人博客部署就结束了</p>
+]]></content>
+  </entry>
 </search>
