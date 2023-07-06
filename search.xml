@@ -1104,4 +1104,144 @@
         <tag>硬件</tag>
       </tags>
   </entry>
+  <entry>
+    <title>C#基础(一)</title>
+    <url>/2023/07/06/C#%E5%9F%BA%E7%A1%80(%E4%B8%80)/</url>
+    <content><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><h2 id="运行第一个-C-程序"><a href="#运行第一个-C-程序" class="headerlink" title="运行第一个 C# 程序"></a>运行第一个 C# 程序</h2><p>在编辑器<code>VS</code>或者中运行以下代码。</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>这是一个简单的程序，可以打印消息“Hello World！”</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/xg52OMRn.png"
+                      alt="输出hello" style="zoom:50%;" 
+                >
+
+
+
+<div style="text-align:center; font-size:small">如果成功输出了“Hello World！”  👍</div>
+
+<div style="text-align:center; font-size:small">那么现在可以把是一名程序员写在简历上😉</div>
+
+<p>这个代码使用了 <code>Console.WriteLine</code> 方法来打印该消息。<code>Console</code> 是表示控制台窗口的类型。<br><code>WriteLine</code> 是 <code>Console</code> 类型的一个方法，用于将一行文本打印到文本控制台。<br><code>string</code>在C#中表示文本。与<code>Console</code>类似，<code>string</code>也有方法。接下来是用<code>string</code>处理文本。</p>
+<h2 id="声明和使用变量"><a href="#声明和使用变量" class="headerlink" title="声明和使用变量"></a>声明和使用变量</h2><p>第一个程序仅限于打印一条消息。可以写更多使用<strong>变量</strong>的有用程序。<strong>变量</strong>可以用于运行具有不同值的相同代码。<br>使用以下代码编写的代码：</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> aFriend = <span class="string">&quot;Chieh&quot;</span>;</span><br><span class="line">Console.WriteLine(aFriend);</span><br></pre></td></tr></table></figure></div>
+
+<p>第一行声明一个变量，并为其赋值为“<code>Chieh</code>”。第二行 打印出<code>aFriend</code>的值</p>
+<p>可以为声明的任何变量分配不同的值。比如将值更改为你的朋友之一。在已经添加的代码后面，在交互窗口中添加以下两行代码。请确保保留变量 <code>aFriend</code> 的声明和初始赋值。</p>
+<ul>
+<li>不要删除<code>aFriend</code>的声明。在现有的声明后面添加以下代码。</li>
+</ul>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line">aFriend = <span class="string">&quot;Xuxu&quot;</span>;</span><br><span class="line">Console.WriteLine(aFriend);</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>请注意，相同的调用<code>aFriend</code>变量代码基于存储在<code>aFriend</code>变量中的值。</li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/Iaf4OLwP.png"
+                      style="zoom:50%;" 
+                >
+
+<p>你可能也注意到，最后缺少消息中都缺少了“Hello”这个词。现在来修复这个问题:将打印消息的代码修改为以下内容：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">&quot;Hello &quot;</span> + aFriend);</span><br></pre></td></tr></table></figure></div>
+
+<p>再次运行程序</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/HvZjfUQy.png"
+                      style="zoom:50%;" 
+                >
+
+<p>相应的，更好的方法是在和字符之间放置一个变量，以告诉 C# 用变量的值替换该文本。<code>&#123; &#125;</code>，称为<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated" >字符串插值 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>如果在字符串的引号前添加 <code>$</code> 符号，您可以在大括号内包含符号，如<code>aFriend</code>。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/IKiRrJLj.png"
+                      style="zoom:50%;" 
+                >
+
+<h2 id="使用字符串"><a href="#使用字符串" class="headerlink" title="使用字符串"></a>使用字符串</h2><p>并不仅限于在大括号之间使用一个变量。试试这个:</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> firstFriend = <span class="string">&quot;Chieh&quot;</span>;</span><br><span class="line"><span class="built_in">string</span> secondFriend = <span class="string">&quot;Xuxu&quot;</span>;</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;我的朋友是 <span class="subst">&#123;firstFriend&#125;</span> 和 <span class="subst">&#123;secondFriend&#125;</span>&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/S7vKKdAK.png"
+                      style="zoom: 50%;" 
+                >
+
+<p>当进一步探索字符串时，你会发现字符串不仅仅是字母的集合。你可以使用<code>Length</code>来找到一个字符串的长度。<code>Length</code>是一个字符串的属性，它会返回该字符串中的字符数量。添加以下代码：</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">$&quot;名字 <span class="subst">&#123;firstFriend&#125;</span> 有 <span class="subst">&#123;firstFriend.Length&#125;</span> 字符.&quot;</span>);</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;名字 <span class="subst">&#123;secondFriend&#125;</span> 有 <span class="subst">&#123;secondFriend.Length&#125;</span> 字符.&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/j9V1InuE.png"
+                      style="zoom:50%;" 
+                >
+
+<h2 id="使用字符串做更多事情"><a href="#使用字符串做更多事情" class="headerlink" title="使用字符串做更多事情"></a>使用字符串做更多事情</h2><p>你一直在使用一个方法，即<code>Console.WriteLine</code>，来打印消息。下面是是实现某种输出操作的<code>代码块</code>。它有一个名字，所以你可以使用它们。</p>
+<h3 id="修剪"><a href="#修剪" class="headerlink" title="修剪"></a>修剪</h3><p>假设您的字符串有您不想显示的前导或尾随空格。您想要<strong>修剪</strong>字符串中的空格。<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.trim" >Trim <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>方法和相关方法<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.trimstart?view=net-7.0" >TrimStart <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>和<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.trimend?view=net-7.0" >TrimEnd <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>完成这项工作。您可以使用这些方法来删除前导和尾随空格。尝试以下代码：</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> greeting = <span class="string">&quot;      Cheih       &quot;</span>;</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;[<span class="subst">&#123;greeting&#125;</span>]&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> trimmedGreeting = greeting.TrimStart();</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;[<span class="subst">&#123;trimmedGreeting&#125;</span>]&quot;</span>);</span><br><span class="line"></span><br><span class="line">trimmedGreeting = greeting.TrimEnd();</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;[<span class="subst">&#123;trimmedGreeting&#125;</span>]&quot;</span>);</span><br><span class="line"></span><br><span class="line">trimmedGreeting = greeting.Trim();</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;[<span class="subst">&#123;trimmedGreeting&#125;</span>]&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/tL3r2jWm.png"
+                      style="zoom:50%;" 
+                >
+
+<h3 id="替换和查找字符串"><a href="#替换和查找字符串" class="headerlink" title="替换和查找字符串"></a>替换和查找字符串</h3><h4 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h4><p>还有其他可用于处理字符串的方法。例如，你可能在编辑器或文字处理器中使用过查找和替换命令。<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.replace" >Replace <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 方法在字符串中实现了类似的功能。它搜索一个子字符串并用不同的文本替换它。<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.replace" >Replace <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 方法需要两个<strong>参数</strong>。这些就是括号中的字符串。第一个字符串是要查找的文本，第二个字符串是要替换的文本。</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> sayHello = <span class="string">&quot;Hi Chieh!&quot;</span>;</span><br><span class="line">Console.WriteLine(sayHello);</span><br><span class="line">sayHello = sayHello.Replace(<span class="string">&quot;Chieh&quot;</span>, <span class="string">&quot;Xuxu&quot;</span>);</span><br><span class="line">Console.WriteLine(sayHello);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/jkzCaDPM.png"
+                      style="zoom:50%;" 
+                >
+
+<p>另外两个有用的方法使字符串全部大写或全部小写：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(sayHello.ToUpper());</span><br><span class="line">Console.WriteLine(sayHello.ToLower());</span><br></pre></td></tr></table></figure></div>
+
+<p>替换变量值后原变量的值也会被替换，<strong>注意语句的输出位置</strong>：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/DFd7NuJB.png"
+                      style="zoom:50%;" 
+                >
+
+<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><p>搜索和替换操作的另一部分是在字符串中查找文本。您可以使用 <a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.contains" >Contains <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>方法进行搜索。它告诉您字符串内部是否包含子字符串。使用以下代码来探索<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.contains" >Contains <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> songLyrics = <span class="string">&quot;今天天气很不错, 出去玩吗？&quot;</span>;</span><br><span class="line">Console.WriteLine(songLyrics.Contains(<span class="string">&quot;天气&quot;</span>));</span><br><span class="line">Console.WriteLine(songLyrics.Contains(<span class="string">&quot;晴天&quot;</span>));</span><br></pre></td></tr></table></figure></div>
+
+<p>Contains方法返回一个布尔值，告诉你是否找到了你正在搜索的字符串。布尔值存储的是真或假两种值。当显示为文本输出时，它们分别为：True 和 False。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/06/Rx9dLulV.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>当测试字符串末尾的文本时，请注意标点符号。</li>
+<li>如果字符串以句点结尾，则必须检查是否有以句点结尾的字符串。</li>
+</ul>
+<p><span style="color:green">到此已经学会了：</span></p>
+<p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
+<p><span style="color:green">         如何声明变量和将字符串们串联在一起。</span></p>
+<p><span style="color:green">         使用字符串做更多事情。</span></p>
+]]></content>
+      <tags>
+        <tag>C#</tag>
+      </tags>
+  </entry>
 </search>
