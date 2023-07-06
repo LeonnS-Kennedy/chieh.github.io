@@ -1105,8 +1105,8 @@
       </tags>
   </entry>
   <entry>
-    <title>C#基础(一)</title>
-    <url>/2023/07/06/C#%E5%9F%BA%E7%A1%80(%E4%B8%80)/</url>
+    <title>C shorp 基础(一)</title>
+    <url>/2023/07/06/C-shorp-%E5%9F%BA%E7%A1%80-%E4%B8%80/</url>
     <content><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><h2 id="运行第一个-C-程序"><a href="#运行第一个-C-程序" class="headerlink" title="运行第一个 C# 程序"></a>运行第一个 C# 程序</h2><p>在编辑器<code>VS</code>或者中运行以下代码。</p>
 <div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);</span><br></pre></td></tr></table></figure></div>
 
@@ -1241,7 +1241,7 @@
 <p><span style="color:green">         使用字符串做更多事情。</span></p>
 ]]></content>
       <tags>
-        <tag>C#</tag>
+        <tag>C shorp</tag>
       </tags>
   </entry>
 </search>
