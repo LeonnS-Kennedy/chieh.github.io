@@ -1106,7 +1106,7 @@
   </entry>
   <entry>
     <title>C shorp 基础(一)</title>
-    <url>/2023/07/06/C-shorp-%E5%9F%BA%E7%A1%80-%E4%B8%80/</url>
+    <url>/2023/07/07/C-shorp-%E5%9F%BA%E7%A1%80-%E4%B8%80/</url>
     <content><![CDATA[<h1 id="运行第一个C-程序"><a href="#运行第一个C-程序" class="headerlink" title="         运行第一个C#程序"></a><span style="color:green">         运行第一个C#程序</span></h1><p>在代码编辑器如**<code>visual studio</code>**中运行以下代码。</p>
 <div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">&quot;Hello World!&quot;</span>);</span><br></pre></td></tr></table></figure></div>
 
@@ -1250,7 +1250,7 @@
 <li>当测试字符串末尾的文本时，请注意标点符号。</li>
 <li>如果字符串以句点结尾，则必须检查是否有以句点结尾的字符串。</li>
 </ul>
-<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:green">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
+<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:Gold">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
 <p><span style="color:green">         如何声明变量和将字符串们串联在一起。</span></p>
 <p><span style="color:green">         使用字符串做更多事情。</span></p>
 ]]></content>
@@ -1260,7 +1260,7 @@
   </entry>
   <entry>
     <title>C shorp 基础(二)</title>
-    <url>/2023/07/06/C-shorp-%E5%9F%BA%E7%A1%80-%E4%BA%8C/</url>
+    <url>/2023/07/07/C-shorp-%E5%9F%BA%E7%A1%80-%E4%BA%8C/</url>
     <content><![CDATA[<h1 id="在-C-中操作整数和浮点数。"><a href="#在-C-中操作整数和浮点数。" class="headerlink" title="         在 C# 中操作整数和浮点数。"></a><span style="color:blue">         在 C# 中操作整数和浮点数。</span></h1><h2 id="int类型"><a href="#int类型" class="headerlink" title="int类型"></a><code>int</code>类型</h2><p>在编辑器中运行以下代码。</p>
 <div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> a = <span class="number">18</span>;</span><br><span class="line"><span class="built_in">int</span> b = <span class="number">6</span>;</span><br><span class="line"><span class="built_in">int</span> c = a + b;</span><br><span class="line"><span class="built_in">int</span> d = a - b;</span><br><span class="line"><span class="built_in">int</span> e = a * b;</span><br><span class="line"><span class="built_in">int</span> f = a / b;</span><br><span class="line">Console.WriteLine(c);</span><br><span class="line">Console.WriteLine(d);</span><br><span class="line">Console.WriteLine(e);</span><br><span class="line">Console.WriteLine(f);</span><br></pre></td></tr></table></figure></div>
 
@@ -1342,11 +1342,249 @@
 <li>注意，使用小数类型的数学在小数点右侧有更多的数字。</li>
 <li>数字上的后缀<code>M</code>指示常量应使用该<code>decimal</code>类型。否则，编译器将采用该<code>double</code>类型。</li>
 </ul>
-<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:green">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
+<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:Gold">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
 <p><span style="color:green">         如何声明变量和将字符串们串联在一起。</span></p>
 <p><span style="color:green">         字符串的修改方法。</span></p>
 <p><span style="color:blue">         C#的运算逻辑。</span></p>
 <p><span style="color:blue">         数据类型的区别和精度。</span></p>
+]]></content>
+      <tags>
+        <tag>C shorp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C shorp 基础(三)</title>
+    <url>/2023/07/07/C-shorp-%E5%9F%BA%E7%A1%80-%E4%B8%89/</url>
+    <content><![CDATA[<h1 id="使用分支和循环语句"><a href="#使用分支和循环语句" class="headerlink" title="         使用分支和循环语句"></a><span style="color:orange">         使用分支和循环语句</span></h1><p>这篇内容为：如何编写检查变量并根据这些变量更改执行路径的代码。</p>
+<h2 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a><code>if</code> 语句</h2><p>在编辑器中运行以下代码。</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">int</span> b = <span class="number">6</span>;</span><br><span class="line"><span class="keyword">if</span> (a + b &gt; <span class="number">10</span>)</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;答案大于 10.&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/6qFG6yoy.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>修改变量的值，不难发现如果答案小于 10将不会输出任何内容。因为不符合<code>if</code>语句的判断条件。</li>
+<li>因为只编写了语句的可能分支之一：<code>真实分支</code>。那么当判断为假的情况下将没有任何代码要执行</li>
+</ul>
+<h2 id="else-语句"><a href="#else-语句" class="headerlink" title="else 语句"></a><code>else</code> 语句</h2><p>要在 true 和 false 分支中执行不同的代码，您可以创建一个<code>else</code>在条件为 false 时执行的分支。尝试这个：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">int</span> b = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span> (a + b &gt; <span class="number">10</span>)</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;答案大于 10&quot;</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;答案小于 10&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/Ht3dd6PX.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li><p><code>else</code>只会在<code>if判断</code>为假时执行，可以理解为中文语境里的<code>if</code>&#x3D;<code>如果</code>，<code>else</code>&#x3D;<code>否则</code></p>
+</li>
+<li><p><code>if</code>和<code>else</code>语句下的缩进是为了方便代码的可读性。C#本身不太在意缩进或空白。因为在<code>if</code>或<code>else</code>关键词后的语句会根据条件执行。</p>
+</li>
+</ul>
+<p>因为缩进并不重要，所以你需要使用 <code>&#123;</code>  和  <code>&#125; </code>来表示想要有多个语句成为条件执行块的一部分。通常来说在所有的<code>if</code>和<code>else</code>上都会使用这些大括号。下面的例子可以试试看。</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">int</span> b = <span class="number">3</span>;</span><br><span class="line"><span class="built_in">int</span> c = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">if</span> ((a + b + c &gt; <span class="number">10</span>) &amp;&amp; (a == b))</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;答案大于 10&quot;</span>);</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;或者a和b的数字相等&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;答案不大于 10&quot;</span>);</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;或者a和b的数字不相等&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/eL7ypy3o.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>该<code>if</code>语句里的<code>==</code>符号代表变量值相等</li>
+<li>代码里    <code>&amp;&amp; </code>   代表 “和” 。也就是两个条件都必须满足才能执行 true 分支中的语句</li>
+<li>另外还有  <code>||</code>  表示 “或” 。也就是两个条件满足任意一个即可执行 true 分支的语句</li>
+<li>每个条件分支中可以有多个语句，前提是将它们在<code>&#123;   &#125;</code>里</li>
+</ul>
+<h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a><code>while</code>语句</h2><p>创建程序的另一个重要概念是<strong>循环</strong>。使用循环来重复想要多次执行的语句。试试以下代码：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> counter = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (counter &lt; <span class="number">10</span>)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;计数器数字为 ： <span class="subst">&#123;counter&#125;</span>&quot;</span>);</span><br><span class="line">  counter++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>while</code>语句会检查条件并执行 后面的语句，直到条件为假为止。<br>此示例中还有另一个新运算符。  <code>++</code>   是<strong>增量</strong>运算符。它将 <code>counter</code> 的值加 1，并将该值存储在 <code>counter</code> 变量中。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/o5YvHSbs.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li><strong>注意：确保<code>while</code>在执行代码时循环条件确实切换为 false。否则，将创建一个 无限循环，程序永远不会结束。</strong></li>
+</ul>
+<h2 id="do-while语句"><a href="#do-while语句" class="headerlink" title="do..while语句"></a><code>do..while</code>语句</h2><p>与while循环不同</p>
+<ul>
+<li>do while循环需要循环体<code>&#123;   &#125;</code>里的内容至少执行一次在进行判断，无论条件最终值是否为真。</li>
+<li>while循环在执行循环体之前会首先判断条件。</li>
+</ul>
+<p>示例：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> counter = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;计数器数字为： <span class="subst">&#123;counter&#125;</span>&quot;</span>);</span><br><span class="line">  counter++;</span><br><span class="line">&#125; <span class="keyword">while</span> (counter &lt; <span class="number">10</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/y5FLSifR.png"
+                      style="zoom:50%;" 
+                >
+
+<h2 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a><code>for</code> 语句</h2><p>在 C# 代码中看到的另一个常见循环语句是 <code>for</code>循环。尝试以下代码：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> counter = <span class="number">0</span>; counter &lt; <span class="number">10</span>; counter++)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;计数器数字为： <span class="subst">&#123;counter&#125;</span>&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>第一部分是<strong>for 初始化</strong>程序：<code>int counter = 0;</code>声明了一个名字为<code>counter</code>的循环变量，并赋值设置为<code>0</code>。</li>
+<li>中间部分是<strong>for条件</strong>：<code>counter &lt; 10</code>声明 ，只要<code>counter</code>的值小于10，这个<code>for</code>循环就继续执行。</li>
+<li>最后一部分是<strong>for 迭代器</strong>：<code>counter++</code>指进行<code>for</code>循环时<code>counter</code>每次变量值时应该增加 1。</li>
+</ul>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/KvlAaFcz.png"
+                      style="zoom:50%;" 
+                >
+
+<h2 id="循环体"><a href="#循环体" class="headerlink" title="循环体"></a>循环体</h2><p><code>while</code>、<code>do</code>、 或<code>for</code>循环可以嵌套在另一个循环中，以使用外循环中的每个项目与内循环中的每个项目的组合来创建矩阵。<br>下面的代码可以生成1-10的数字：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> row = <span class="number">1</span>; row &lt; <span class="number">11</span>; row++)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;row的值为：  <span class="subst">&#123;row&#125;</span>&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>下面的代码可以生成a-j的字母：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">char</span> column = <span class="string">&#x27;a&#x27;</span>; column &lt; <span class="string">&#x27;k&#x27;</span>; column++)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;column 的值为： <span class="subst">&#123;column&#125;</span>&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>下面将一个上面的循环嵌套在另一个循环中以形成矩阵：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> row = <span class="number">1</span>; row &lt; <span class="number">11</span>; row++)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">char</span> column = <span class="string">&#x27;a&#x27;</span>; column &lt; <span class="string">&#x27;k&#x27;</span>; column++)</span><br><span class="line">  &#123;</span><br><span class="line">    Console.WriteLine(<span class="string">$&quot;矩阵为： (<span class="subst">&#123;row&#125;</span>, <span class="subst">&#123;column&#125;</span>)&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/cG9WwKW9.png"
+                      style="zoom:50%;" 
+                >
+
+<p>每次完整运行内循环时，外循环都会递增一次。</p>
+<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:Gold">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
+<p><span style="color:green">         如何声明变量和将字符串们串联在一起。</span></p>
+<p><span style="color:green">         字符串的修改方法。</span></p>
+<p><span style="color:blue">         C#的运算逻辑。</span></p>
+<p><span style="color:blue">         数据类型的区别和精度。</span></p>
+<p><span style="color:orange">         分支和循环语句。</span></p>
+<p><span style="color:orange">         循环体。</span></p>
+]]></content>
+      <tags>
+        <tag>C shorp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C shorp 基础(四)</title>
+    <url>/2023/07/07/C-shorp-%E5%9F%BA%E7%A1%80-%E5%9B%9B/</url>
+    <content><![CDATA[<h1 id="C-中的列表"><a href="#C-中的列表" class="headerlink" title="         C#中的列表"></a><span style="color:pink">         C#中的列表</span></h1><p>在编辑器中输入以下代码（可以<code>&lt;your name&gt;</code>将替换为你自己的名字）并选择<strong>“运行”</strong>：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> names = <span class="keyword">new</span> List&lt;<span class="built_in">string</span>&gt; &#123; <span class="string">&quot;&lt;your name&gt;&quot;</span>, <span class="string">&quot;Maria&quot;</span>, <span class="string">&quot;Xuxu&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> name <span class="keyword">in</span> names)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;Hello <span class="subst">&#123;name.ToUpper()&#125;</span>!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>结果如下：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/9dDfzEdR.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>显示名称的代码利用了<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated" >字符串插值 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>功能:在 <code>string</code>前面添加<code>$</code>字符时，可以在字符串声明中嵌入 C# 代码。</li>
+<li>输出大写是因为调用了<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.string.toupper" >String.ToUpper <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>方法:<code>&#123;name.ToUpper()&#125;</code>用每个名称替换 并转换为大写字母。</li>
+</ul>
+<h2 id="修改列表内容"><a href="#修改列表内容" class="headerlink" title="修改列表内容"></a>修改列表内容</h2><p>创建的集合使用<a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1">List<T></a>类型。该类型存储元素序列，可以指定尖括号之间的元素类型。<br>此类型的一个重要方面是它可以增大或缩小，能够添加或删除元素。显示内容后，可以通过修改内容来查看结果</p>
+<ul>
+<li><p>在之前已经编写的代码下方添加以下代码（在打印内容的循环下方）：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">Console.WriteLine();</span><br><span class="line">names.Add(<span class="string">&quot;Chieh&quot;</span>);</span><br><span class="line">names.Add(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line">names.Remove(<span class="string">&quot;Maria&quot;</span>);</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> name <span class="keyword">in</span> names)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;Hello <span class="subst">&#123;name.ToUpper()&#125;</span>!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/A086FTye.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>该代码的输出显示初始内容，然后会打印一个空行和新内容。</li>
+<li>现在列表末尾添加了另外两个名字。还删除了一个名字<code>Maria</code>。</li>
+</ul>
+<p> <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1">List<T></a>还允许您通过<strong>索引</strong>引用各个项目。<code>[</code>您可以使用和令牌访问项目<code>]</code>。在已经编写的代码里添加以下代码：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">$&quot;我的名字是<span class="subst">&#123;names[<span class="number">0</span>]&#125;</span>.&quot;</span>);</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;我认识 <span class="subst">&#123;names[<span class="number">1</span>]&#125;</span> 和 <span class="subst">&#123;names[<span class="number">2</span>]&#125;</span> &quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/GsIgfw2j.png"
+                      style="zoom:50%;" 
+                >
+
+<p>你无法访问超过列表长度之后的内容。您可以使用Count属性来检查列表的长度。添加以下代码来尝试一下：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">$&quot;表单上有 <span class="subst">&#123;names.Count&#125;</span> 个人&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/h9gWoLD8.png"
+                      style="zoom:50%;" 
+                >
+
+<ul>
+<li>索引从 0 开始，因此最大的有效索引比列表中的项目数减 1</li>
+</ul>
+<h2 id="搜索和排序列表"><a href="#搜索和排序列表" class="headerlink" title="搜索和排序列表"></a>搜索和排序列表</h2><p>示例使用的是相对较小的列表，但实际中应用程序可能经常创建包含更多元素的列表，有时数量在数千之间。要在这些较大的集合中查找元素，需要在列表中搜索不同的项目。可以使用<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.indexof" >IndexOf <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>方法搜索一个项目并返回该项目的索引。如果项目不在列表中，<code>IndexOf</code>返回<code>-1</code>，否则会返回项目在列表中的标号。<br>在你迄今为止写的代码下面添加以下代码：</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> index = names.IndexOf(<span class="string">&quot;Chieh&quot;</span>);</span><br><span class="line"><span class="keyword">if</span> (index != <span class="number">-1</span>)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;名字为 <span class="subst">&#123;names[index]&#125;</span> 的序号为 <span class="subst">&#123;index&#125;</span>&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> notFound = names.IndexOf(<span class="string">&quot;Not Found&quot;</span>);</span><br><span class="line">Console.WriteLine(<span class="string">$&quot;如果没有找到某个项目那么会返回 <span class="subst">&#123;notFound&#125;</span>&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/fnv822Eu.png"
+                      style="zoom:50%;" 
+                >
+
+<p>列表中的项目也可以排序。使用<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort" >Soet <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>方法按正常顺序（对于字符串按字母顺序）对列表中的所有项目进行排序添加此代码并再次运行：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line">names.Sort();</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> name <span class="keyword">in</span> names)</span><br><span class="line">&#123;</span><br><span class="line">  Console.WriteLine(<span class="string">$&quot;Hello <span class="subst">&#123;name.ToUpper()&#125;</span>!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/nYfVfYNd.png"
+                      style="zoom:50%;" 
+                >
+
+<p>到目前为止，你在列表中使用的是<code>string</code>类型。让我们使用不同的类型创建一个<a class="link"   href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" >List <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。我们构建一个数字集。删除你到目前为止写的代码，然后输入下面的代码：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fibonacciNumbers = <span class="keyword">new</span> List&lt;<span class="built_in">int</span>&gt; &#123;<span class="number">1</span>, <span class="number">1</span>&#125;;</span><br></pre></td></tr></table></figure></div>
+
+<p>这将创建一个整数列表，并将前两个整数设置为值 1，接下来添加此代码：</p>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (fibonacciNumbers.Count &lt; <span class="number">5</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> previous = fibonacciNumbers[fibonacciNumbers.Count - <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">var</span> previous2 = fibonacciNumbers[fibonacciNumbers.Count - <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line">    fibonacciNumbers.Add(previous + previous2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">foreach</span>(<span class="keyword">var</span> item <span class="keyword">in</span> fibonacciNumbers)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>这给程序是一个斐波那契数列，循环的每次迭代中，都会获取列表中的最后两个整数，然后对它们求和，然后将该值添加到列表中。重复5次循环</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://img1.imgtp.com/2023/07/07/IFYUVWSJ.png"
+                      style="zoom:50%;" 
+                >
+
+<h1 id="到此已经学会了："><a href="#到此已经学会了：" class="headerlink" title="到此已经学会了："></a><span style="color:Gold">到此已经学会了：</span></h1><p><span style="color:green">         使用 <code>Console.WriteLine()</code> 将文本显示在屏幕上。</span></p>
+<p><span style="color:green">         如何声明变量和将字符串们串联在一起。</span></p>
+<p><span style="color:green">         字符串的修改方法。</span></p>
+<p><span style="color:blue">         C#的运算逻辑。</span></p>
+<p><span style="color:blue">         数据类型的区别和精度。</span></p>
+<p><span style="color:orange">         分支和循环语句。</span></p>
+<p><span style="color:orange">         循环体。</span></p>
+<p><span style="color:pink">         修改列表。</span></p>
+<p><span style="color:pink">         搜索和排序列表。</span></p>
 ]]></content>
       <tags>
         <tag>C shorp</tag>
